@@ -1,0 +1,6 @@
+.venv/
+.pio/
+__pycache__/
+*.egg-info/
+screen_map.json
+*.png
