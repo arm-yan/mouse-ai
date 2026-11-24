@@ -39,7 +39,7 @@ held during the "Connecting..." phase.
 
 ### 2. Pair the target machine
 
-On the target machine, open Bluetooth settings and pair with **MouseAI**.
+On the target machine, open Bluetooth settings and pair with **Nazar**.
 It appears and behaves like an ordinary Bluetooth mouse. Pairing is needed
 once; afterwards it reconnects automatically whenever the ESP32 is powered.
 
@@ -47,8 +47,18 @@ once; afterwards it reconnects automatically whenever the ESP32 is powered.
 
 ```
 cd controller
-pip install -e .
+pip install -e .          # add [vision] for the camera loop: pip install -e .[vision]
 ```
+
+On **Ubuntu/Linux** additionally:
+
+- No USB driver needed — the CP210x driver ships with the kernel; the board
+  appears as `/dev/ttyUSB0` (auto-detected by the library).
+- Give yourself permission to open serial ports (once, then log out/in):
+
+  ```
+  sudo usermod -aG dialout $USER
+  ```
 
 ### 4. Smoke test
 

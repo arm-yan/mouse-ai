@@ -3,7 +3,7 @@
 
 // Advertises as a standard BLE HID mouse. The target machine pairs with it
 // like any Bluetooth mouse; commands arrive over USB serial from the AI side.
-BleMouse bleMouse("MouseAI", "MouseAI", 100);
+BleMouse bleMouse("Nazar", "Nazar", 100);
 
 static const size_t BUF_LEN = 64;
 static char buf[BUF_LEN];

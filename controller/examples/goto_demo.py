@@ -2,7 +2,7 @@
 the target monitor, then to each corner region.
 
 Prerequisites:
-  - firmware flashed, target machine paired with "MouseAI"
+  - firmware flashed, target machine paired with "Nazar"
   - pip install -e .[vision]
   - examples/calibrate.py has saved screen_map.json
 
